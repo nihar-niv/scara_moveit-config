@@ -1,0 +1,15 @@
+controller_list:
+  - name: scara_arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - shoulder_joint
+      - elbow_joint
+      - wrist_joint
+  - name: scara_drill_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - chuck_joint
